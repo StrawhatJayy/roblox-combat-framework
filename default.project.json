@@ -1,0 +1,35 @@
+{
+  "name": "CombatFramework",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "Combat": {
+        "$className": "Folder",
+        "Types": {
+          "$path": "src/shared/Types.luau"
+        },
+        "AbilityRequest": {
+          "$className": "RemoteEvent"
+        },
+        "AbilityFeedback": {
+          "$className": "RemoteEvent"
+        }
+      }
+    },
+    "ServerScriptService": {
+      "Combat": {
+        "$path": "src/server"
+      },
+      "CombatTests": {
+        "$path": "tests"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "CombatInput": {
+          "$path": "src/client/Input.client.luau"
+        }
+      }
+    }
+  }
+}
